@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9f0f5; /* Light gray background for contrast */
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9AB8F7; /* Vibrant blue for the navbar */
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for link hover */
+}
+
+.nav-links a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: calc(100vh - 80px); /* Adjust for navbar height */
+    padding: 40px;
+   
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.container:hover {
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px;
+}
+
+.column {
+    flex: 1;
+    max-width: 400px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s; /* Smooth shadow effect */
+}
+
+.column:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.column h2 {
+    font-size: 1.8em;
+    color: #9AB8F7; /* Blue color for headers */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+    color: #555;
+}
+
+.column ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Background color change on hover */
+}
+
+.column ul li:hover {
+    background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    color: #9AB8F7; /* Consistent blue color */
+    margin: 20px 0;
+}
+
+.points-earned {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #9AB8F7; /* Blue background for points display */
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: center;
+    transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.points-earned:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+}

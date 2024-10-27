@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Clean font for readability */
+    background-color: #f9f9f9; /* Light background for contrast */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9AB8F7; /* Changed to a vibrant blue */
+    padding: 23px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s; /* Transition for navbar background */
+}
+
+.logo {
+    color: #fff; /* White text for logo */
+    font-size: 24px; /* Increased logo font size */
+}
+
+.nav-links {
+    list-style-type: none; /* Removes default list style */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Display links in a row */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Space between links */
+}
+
+.nav-links a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* White text for links */
+    padding: 8px 16px; /* Padding for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+.nav-links a:hover {
+    background-color: #555; /* Darker background on hover */
+    color: #f9f9f9; /* Lighter text color on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+
+.container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background: white; 
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center content */
+}
+
+.section {
+    margin-bottom: 30px; 
+}
+
+.suggestions {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.suggestion-item { 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 15px; /* Increased padding for better layout */
+    margin: 10px 0; 
+    background-color: #fafafa; /* Light background for suggestion items */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.suggestion-item:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+}
+
+button { 
+    padding: 8px 15px; /* Increased padding for buttons */
+    border: none; 
+    background-color: #9AB8F7; 
+    color: white; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 14px; /* Standard font size for buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
+}
+
+button:hover { 
+    background-color: #0056b3; /* Slightly darker on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Resets position on click */
+}
+
+.comment-box { 
+    width: calc(100% - 20px); /* Makes the comment box full width minus padding */
+    height: 100px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding: 10px; 
+    margin-top: 10px; 
+    font-family: inherit; /* Ensures the font matches the body font */
+    font-size: 14px; /* Standard font size for input */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.comment-box:focus {
+    border-color: #9AB8F7; /* Change border color on focus */
+    outline: none; /* Removes default outline */
+}
